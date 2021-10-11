@@ -29,6 +29,7 @@ print(limit((x**2-1)/(x+1),x,-1))
 ## derivatives in lab2
 import math
 x,c,p,e = symbols('x c p e')
+# D
 # 1.
 print(diff(c*p*(1-p),p))
 
@@ -57,7 +58,38 @@ print(diff(expr2,x1,x2))
 
 # 5.
 x,f = symbols('x f')
-x = (sqrt(3000-4*f**5))
+f = ((x**2-3000)/-4)**(1/5)
+print(diff(f,x))
 
+# E: find integrals
+# 1.
+x, n, e = symbols('x n e')
+print(integrate(x**n,(x,1,3)))
+# 2.
+print(integrate(1/x,(x,1,3)))
+# 3.
+print((integrate(e**x,(x,1,3))))
+# 4.
+t = symbols('t')
+R = 60*t/((t+2)*(t+1)**2)
+print(integrate(R,(t,1)))
+print(integrate(R,(t,3)))
+# 5.
+e,t = symbols('e t')
+f = 0.21*e**(-0.21*t)
+# first year:
+print(integrate(f,(t,0,1)))
+# second year:
+print(integrate(f,(t,1,2)))
 
+## F. Use solver to solve equations
+# 1.
+f, a, b, c =symbols('f a b c')
+print(solve(Eq(a*x**2+b*x+c,0),x))
+print(solveset(Eq(a*x**2+b*x+c,0),x))
+# 2.
+
+# 3.
+y,t,e =symbols('y t e')
+ #diff(y,t) = 100+e**-t-y
 
