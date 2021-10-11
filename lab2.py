@@ -12,3 +12,8 @@ print(expr)
 print(expr + 1)
 # remove the x in the expression
 print(expr - x)
+
+# 
+expanded_expr = expand(x*expr)
+print(expanded_expr)
+
