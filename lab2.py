@@ -3,7 +3,7 @@ import sympy
 n = sympy.sqrt(3)
 print(n)
 
-# represent mathmatical expression: (x+2y)
+# represent mathematical expression: (x+2y)
 from sympy import *
 x,y = symbols('x y')
 expr = x + 2*y
