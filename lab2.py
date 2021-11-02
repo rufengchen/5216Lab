@@ -20,6 +20,7 @@ from sympy import *
 x,c,p = symbols('x c p')
 ## Limit questions in lab2
 # 1.limit of 1/x, x to 1
+x = symbols('x')
 print(limit(1/x,x,1))
 # 2.limit of 1/x, x to 0
 print(limit(1/x,x,0))
@@ -27,7 +28,7 @@ print(limit(1/x,x,0))
 print(limit((x**2-1)/(x+1),x,-1))
 
 ## derivatives in lab2
-import math
+
 x,c,p,e = symbols('x c p e')
 # D
 # 1.
